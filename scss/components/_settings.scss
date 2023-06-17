@@ -1,0 +1,74 @@
+html {
+    --container: 1400px;
+    --padding-container: 20px;
+    --container-width:  calc(var(var(--container) + (var(var(--padding-container) * 2))));
+    box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
+
+    // colors
+    --hover-color: #111;
+    --active-color: #11111149;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+body {
+    margin: 0;
+    min-width: 375px;
+    min-height: 100%;
+    font-family: Poppins, sans-serif;
+    background: #F9F9F9;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    user-select: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.container {
+    max-width: calc(var(--container) + (var(--padding-container) * 2));
+    padding: 0 var(--padding-container);
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}

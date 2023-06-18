@@ -1,0 +1,62 @@
+.quality {
+    .container {
+        max-width: 1260px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        border-bottom: 1px solid #CBCBCB;
+    }
+
+    &__left {
+        grid-column: 2 / 4 span;
+    }
+    
+    &__right {
+        margin-top: 95px;
+        grid-column: 8 / 5 span;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 58px;
+        margin-bottom: 60px;
+
+        &--allocated {
+            color: #6C5FBC;
+        }
+    }
+
+    &__list {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 31px;
+        color: #676767;
+        list-style-type: disc;
+        margin-bottom: 27px;
+    }
+
+    &__download--block {
+        max-width: 330px;
+        margin-top: 34px;
+        position: relative;
+
+        .svg {
+            position: absolute;
+            right: 0;
+        }
+    }
+    &__btn {
+        padding: 18px 26px 17px;
+        background: #6C5FBC;
+        border-radius: 14px;
+        align-items: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        color: #fff;
+        
+        svg {
+            margin-left: 15px;
+        }
+    }
+}

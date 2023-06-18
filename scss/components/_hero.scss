@@ -23,6 +23,10 @@
         line-height: 120%;
         letter-spacing: -3px;
         margin-bottom: 16px;
+
+        &--allocated {
+            color: var(--hero-color);
+        }
     }
 
     &__description {

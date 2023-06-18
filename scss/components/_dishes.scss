@@ -1,0 +1,81 @@
+.dishes {
+    margin-top: 100px;
+    
+    .container {
+        max-width: 1240px;
+        padding-bottom: 120px;
+        border-bottom: 1px solid #CBCBCB;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 75px;
+    }
+
+    &__content {
+        gap: 30px;
+    }
+
+    &__card {
+        padding: 26px 17px 29px 5px;
+        background: #FFFFFF;
+        border: 1px solid #F4F4F6;
+        box-shadow: 6px 82px 41px rgba(229, 229, 229, 0.7);
+        border-radius: 34px;
+        position: relative;
+
+        &--bottom {
+            padding: 0 10px 0 18px;
+        }
+    }
+
+    &__add--favorites {
+        position: absolute;
+        right: 17px;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 37px;
+        color: #323142;
+    }
+
+    &__card--characteristic {
+        font-weight: 400;
+        font-size: 17.2907px;
+        line-height: 23px;
+        color: #8E97A6;
+        margin-bottom: 10px;
+    }
+
+    &__card--add {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__add {
+        align-items: center;
+        justify-content: center;
+        width: 43px;
+        height: 39px;
+        background: #323142;
+        border-radius: 8px;
+    }
+}
+
+.price {
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 25.936px;
+    line-height: 40px;
+    color: #323142;
+    
+    span {
+        font-family: 'Manrope';
+        font-weight: 700;
+        font-size: 18.8058px;
+        line-height: 40px;
+        color: #8E97A6;
+    }
+}

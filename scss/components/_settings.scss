@@ -1,5 +1,5 @@
 html {
-    --container: 1400px;
+    --container: 1280px;
     --padding-container: 20px;
     --container-width:  calc(var(var(--container) + (var(var(--padding-container) * 2))));
     box-sizing: border-box;
@@ -7,8 +7,9 @@ html {
     overflow-x: hidden;
 
     // colors
-    --hover-color: #111;
+    --hero-color: #6C5FBC;
     --active-color: #11111149;
+    --allocated-title: #6C5FBC;
 }
 
 *, *::before, *::after {
@@ -71,4 +72,33 @@ ul {
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+}
+
+
+// Повторяющиеся стили
+
+.green {
+    background: rgb(186, 245, 210);
+    color: #309D5B;
+}
+
+.yellow {
+    background: #f7edd0;
+    color: #DAA31A;
+}
+
+.red {
+    background: #f7c5ba;
+    color: #FB471D;
+}
+
+.allocated--title {
+    color: var(--allocated-title);
+}
+
+.title {
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 26px;
+    color: #323142;
 }

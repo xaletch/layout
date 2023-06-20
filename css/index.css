@@ -9,6 +9,8 @@ html {
   --hero-color: #6C5FBC;
   --active-color: #11111149;
   --allocated-title: #6C5FBC;
+  --popup-list: #a69af5;
+  --consumption-line: #FBAD18;
 }
 
 *, *::before, *::after {
@@ -494,4 +496,198 @@ ul {
   font-size: 18.8058px;
   line-height: 40px;
   color: #8E97A6;
+}
+
+.purchases {
+  margin-top: 100px;
+}
+.purchases .container {
+  padding-bottom: 134px;
+  border-bottom: 1px solid #CBCBCB;
+}
+.purchases__left {
+  grid-column: 5 span;
+}
+.purchases__title {
+  font-size: 50px;
+  line-height: 58px;
+  color: #18181B;
+}
+.purchases__card {
+  margin-top: 48px;
+  max-width: 345px;
+}
+.purchases__card--look {
+  padding: 4px 17px;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px rgba(70, 70, 70, 0.1);
+  border-radius: 12px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.purchases__card--time {
+  font-weight: 500;
+  font-size: 13.0442px;
+  line-height: 140%;
+  color: #ACADB9;
+  margin-left: 42px;
+  margin-top: auto;
+}
+.purchases__right {
+  grid-column: 8/10 span;
+}
+.purchases__expenses {
+  min-width: 534px;
+  background: #FFFFFF;
+  border: 1px solid #EDF2F7;
+  border-radius: 25px;
+}
+.purchases__expenses--inner {
+  padding: 45px 37px;
+}
+.purchases__expenses--header {
+  font-family: "Manrope";
+  justify-content: space-between;
+  align-items: center;
+}
+.purchases__expenses--card {
+  border: 1px solid #EDF2F7;
+  border-radius: 18px;
+  margin-bottom: 21px;
+  padding: 25px;
+}
+.purchases__expenses--card__top {
+  justify-content: space-between;
+}
+.purchases__expenses--description {
+  margin-left: 18px;
+  grid-column: 2/12;
+  font-family: "Manrope";
+}
+.purchases__expenses--card__bottom {
+  margin-top: 20px;
+}
+.purchases__expenses--consumption {
+  width: 100%;
+  height: 10px;
+  border-radius: 78px;
+}
+.purchases__purple--line {
+  background: rgba(107, 95, 188, 0.2196078431);
+  position: relative;
+}
+.purchases__purple--line::before {
+  content: "";
+  width: 95%;
+  height: 10px;
+  background: #6C5FBC;
+  border-radius: 78px;
+  position: absolute;
+}
+.purchases__yellow--line {
+  background: rgba(251, 172, 24, 0.2039215686);
+  position: relative;
+}
+.purchases__yellow--line::before {
+  content: "";
+  width: 55%;
+  height: 10px;
+  background: #fbac18;
+  border-radius: 78px;
+  position: absolute;
+}
+
+.card__description {
+  margin-left: 19px;
+}
+.card__description--title {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 140%;
+  color: #323142;
+}
+.card__description--action {
+  font-weight: 500;
+  font-size: 12.0408px;
+  line-height: 140%;
+  color: #323142;
+}
+
+.expenses__header {
+  margin-bottom: 37px;
+  position: relative;
+}
+.expenses__header--title {
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 135%;
+  color: #1A202C;
+}
+.expenses__header--month__selection {
+  padding: 12px 18px;
+  background: #FAFAFA;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 18.8471px;
+  line-height: 150%;
+  color: #1A202C;
+  align-items: center;
+  cursor: pointer;
+}
+.expenses__header--month__selection svg {
+  margin-left: 6px;
+}
+.expenses__header--month__list {
+  font-family: "Manrope";
+  margin-top: 215px;
+  background: #FAFAFA;
+  border-radius: 10px;
+  position: absolute;
+  right: 0;
+  padding: 12px 0;
+  font-size: 16px;
+  z-index: 99;
+  display: none;
+}
+.expenses__header--month__list li:hover {
+  background: var(--popup-list);
+  color: #fff;
+}
+.expenses__header--month__title {
+  padding: 5px 40px;
+  cursor: pointer;
+}
+.expenses__top--title {
+  font-weight: 800;
+  font-size: 18.8471px;
+  line-height: 150%;
+  color: #1A202C;
+}
+.expenses__top--increased {
+  font-weight: 500;
+  font-size: 15.7059px;
+  line-height: 150%;
+  color: #A0AEC0;
+}
+.expenses__price {
+  font-family: "Manrope";
+  font-weight: 800;
+  font-size: 21px;
+  line-height: 150%;
+  color: #1A202C;
+}
+
+.active {
+  color: #fff;
+  background: var(--allocated-title);
+  font-weight: 700;
+}
+
+.card__logo {
+  align-items: center;
+}
+
+.card--red {
+  color: #F1534E;
 }/*# sourceMappingURL=index.css.map */

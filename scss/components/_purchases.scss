@@ -1,0 +1,222 @@
+.purchases {
+    margin-top: 100px;
+    .container {
+        padding-bottom: 134px;
+        border-bottom: 1px solid #CBCBCB;
+    }
+    &__left {
+        grid-column: 5 span;
+    }
+
+    &__title {
+        font-size: 50px;
+        line-height: 58px;
+        color: #18181B;
+    }
+
+    &__card {
+        margin-top: 48px;
+        max-width: 345px;
+
+        &--look {
+            padding: 4px 17px;
+            background: #FFFFFF;
+            box-shadow: 0px 20px 30px rgba(70, 70, 70, 0.1);
+            border-radius: 12px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+    }
+
+    &__card--time {
+        font-weight: 500;
+        font-size: 13.0442px;
+        line-height: 140%;
+        color: #ACADB9;
+        margin-left: 42px;
+        margin-top: auto;
+    }
+
+    &__right {
+        grid-column: 8 / 10 span;
+    }
+
+    &__expenses {
+        min-width: 534px;
+        background: #FFFFFF;
+        border: 1px solid #EDF2F7;
+        border-radius: 25px;
+
+        &--inner {
+            padding: 45px 37px;
+        }
+
+        &--header {
+            font-family: 'Manrope';
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__expenses--card {
+        border: 1px solid #EDF2F7;
+        border-radius: 18px;
+        margin-bottom: 21px;
+        padding: 25px;
+
+        &__top {
+            justify-content: space-between;
+        }
+    }
+
+    &__expenses--description {
+        margin-left: 18px;
+        grid-column: 2 / 12;
+        font-family: 'Manrope';
+    }
+
+    &__expenses--card__bottom {
+        margin-top: 20px;
+    }
+
+    &__expenses--consumption {
+        width: 100%;
+        height: 10px;
+        border-radius: 78px;
+    }
+
+    &__purple--line {
+        background: #6b5fbc38;
+        position: relative;
+        
+        &::before {
+            content: "";
+            width: 95%;
+            height: 10px;
+            background: #6C5FBC;
+            border-radius: 78px;
+            position: absolute;
+        }
+    }
+    
+    &__yellow--line {
+        background: #fbac1834;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 55%;
+            height: 10px;
+            background: #fbac18;
+            border-radius: 78px;
+            position: absolute;
+        }
+    }
+
+}
+
+.card__description {
+    margin-left: 19px;
+    &--title {
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 140%;
+        color: #323142;
+    }
+
+    &--action {
+        font-weight: 500;
+        font-size: 12.0408px;
+        line-height: 140%;
+        color: #323142;
+    }
+}
+
+.expenses {
+    &__header {
+        margin-bottom: 37px;
+        position: relative;
+        &--title {
+            font-family: 'Manrope';
+            font-weight: 800;
+            font-size: 28px;
+            line-height: 135%;
+            color: #1A202C;
+        }
+        &--month__selection {
+            padding: 12px 18px;
+            background: #FAFAFA;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 18.8471px;
+            line-height: 150%;
+            color: #1A202C;
+            align-items: center;
+            cursor: pointer;
+
+            svg {
+                margin-left: 6px;
+            }
+        }
+        &--month__list {
+            font-family: 'Manrope';
+            margin-top: 215px;
+            background: #FAFAFA;
+            border-radius: 10px;
+            position: absolute;
+            right: 0;
+            padding: 12px 0;
+            font-size: 16px;
+            z-index: 99;
+            
+            display: none;
+
+            li:hover {
+                background: var(--popup-list);
+                color: #fff;
+            }
+        }
+
+        &--month__title {
+            padding: 5px 40px;
+            cursor: pointer;
+        }
+    }
+
+    &__top--title {
+        font-weight: 800;
+        font-size: 18.8471px;
+        line-height: 150%;
+        color: #1A202C;
+    }
+
+    &__top--increased {
+        font-weight: 500;
+        font-size: 15.7059px;
+        line-height: 150%;
+        color: #A0AEC0;
+    }
+
+    &__price {
+        font-family: 'Manrope';
+        font-weight: 800;
+        font-size: 21px;
+        line-height: 150%;
+        color: #1A202C;
+    }
+}
+
+.active {
+    color: #fff;
+    background: var(--allocated-title);
+    font-weight: 700;
+}
+
+.card__logo {
+    align-items: center;
+}
+
+.card--red {
+    color: #F1534E;
+}

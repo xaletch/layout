@@ -1,0 +1,25 @@
+.footer {
+    margin-top: 156px;
+    padding: 96px 0 81px;
+    background: #EAEAEA;
+
+    &__top {
+        border-bottom: 1px solid #CBCBCB;
+        padding-bottom: 29px;
+        padding-left: 0;
+        padding-right: 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__bottom {
+        margin-top: 57px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__social--media {
+        align-items: center;
+        gap: 53px;
+    }
+}

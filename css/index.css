@@ -796,4 +796,27 @@ ul {
   position: absolute;
   top: 7px;
   right: 84px;
+}
+
+.footer {
+  margin-top: 156px;
+  padding: 96px 0 81px;
+  background: #EAEAEA;
+}
+.footer__top {
+  border-bottom: 1px solid #CBCBCB;
+  padding-bottom: 29px;
+  padding-left: 0;
+  padding-right: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__bottom {
+  margin-top: 57px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__social--media {
+  align-items: center;
+  gap: 53px;
 }/*# sourceMappingURL=index.css.map */

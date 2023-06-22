@@ -11,6 +11,7 @@ html {
   --allocated-title: #6C5FBC;
   --popup-list: #a69af5;
   --consumption-line: #FBAD18;
+  --primary-color: #6C5FBC;
 }
 
 *, *::before, *::after {
@@ -690,4 +691,109 @@ ul {
 
 .card--red {
   color: #F1534E;
+}
+
+.reviews {
+  margin-top: 116px;
+}
+.reviews__title {
+  text-align: center;
+}
+.reviews__card {
+  max-width: 528px;
+  background: #fff;
+  border-radius: 20px;
+}
+.reviews__card--inner {
+  padding: 38px 43px;
+}
+.reviews__card--header {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.reviews__card--text {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 26px;
+  color: #636363;
+  margin-bottom: 32px;
+}
+.reviews__user-profile {
+  align-items: center;
+}
+
+.user__description {
+  margin-left: 20px;
+}
+.user__name {
+  color: #030314;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 31px;
+}
+.user__with--us {
+  color: #5E5D5D;
+  font-size: 16px;
+  font-family: Quicksand;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.swiper {
+  margin-top: 80px;
+  height: 400px;
+}
+
+.subscribe {
+  margin-top: 182px;
+}
+.subscribe__block {
+  height: 280px;
+  margin: 0 auto;
+  padding: 46px 51px 0px 46px;
+  border-radius: 30px;
+  background: var(--primary-color);
+  background-image: url(/img/subscribe_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.subscribe__sub--title {
+  grid-column: 1/5;
+  color: #FFF;
+  text-align: center;
+  font-size: 70px;
+  font-weight: 800;
+  text-align: start;
+}
+.subscribe__img {
+  grid-column: 9/12;
+}
+.subscribe__input {
+  position: relative;
+  grid-column: 1/6;
+}
+.subscribe__input input {
+  padding: 21px 200px 22px 21px;
+  border-radius: 10.122px;
+  background: #FFF;
+  box-shadow: 0px 5px 32px 0px rgba(0, 0, 0, 0.1);
+  border: none;
+  outline: none;
+  color: #878787;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+.subscribe__input--btn {
+  padding: 15px 23px 16px 25px;
+  border-radius: 8.002px;
+  background: #6C5FBC;
+  color: #F7F8FA;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: absolute;
+  top: 7px;
+  right: 84px;
 }/*# sourceMappingURL=index.css.map */

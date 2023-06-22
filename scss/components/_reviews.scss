@@ -1,0 +1,61 @@
+.reviews {
+    margin-top: 116px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__card {
+        max-width: 528px;
+        background: #fff;
+        border-radius: 20px;
+
+        &--inner {
+            padding: 38px 43px;
+        }
+
+        &--header {
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        &--text {
+            font-size: 18px;
+            font-style: italic;
+            line-height: 26px;
+            color: #636363;
+            margin-bottom: 32px;
+        }
+    }
+
+    &__user-profile {
+        align-items: center;
+    }
+}
+
+.user {
+    &__description {
+        margin-left: 20px;
+    }
+
+    &__name {
+        color: #030314;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 31px;
+    }
+
+    &__with--us {
+        color: #5E5D5D;
+        font-size: 16px;
+        font-family: Quicksand;
+        font-weight: 500;
+        line-height: 26px;
+    }
+}
+
+.swiper {
+    margin-top: 80px;
+    height: 400px;
+}

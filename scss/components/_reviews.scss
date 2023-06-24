@@ -21,12 +21,20 @@
 
         &--inner {
             padding: 38px 43px;
+
+            @include tablet {
+                padding: 30px 33px;
+            }
         }
 
         &--header {
             justify-content: space-between;
             align-items: center;
             margin-bottom: 30px;
+
+            @include tablet {
+                margin-bottom: 20px;
+            }
         }
 
         &--text {
@@ -40,6 +48,11 @@
                 font-size: 16px;
                 line-height: 24px;
                 margin-bottom: 28px;
+            }
+
+            @include tablet {
+                font-size: 12px;
+                margin-bottom: 22px;
             }
         }
     }
@@ -63,6 +76,11 @@
         @include big-desktop {
             font-size: 18px;
         }
+
+        @include tablet {
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
 
     &__with--us {
@@ -74,6 +92,11 @@
 
         @include big-desktop {
             font-size: 15px;
+        }
+
+        @include tablet {
+            font-size: 12px;
+            line-height: 16px;
         }
     }
 }

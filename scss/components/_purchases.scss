@@ -42,10 +42,19 @@
             border-radius: 12px;
             margin-bottom: 15px;
             align-items: center;
+
+            @include tablet {
+                margin-bottom: 10px;
+            }
         }
 
         @include big-desktop {
             margin-top: 34px;
+        }
+
+        @include tablet {
+            width: 310px;
+            margin-top: 20px;
         }
     }
 
@@ -54,16 +63,24 @@
         font-size: 13px;
         line-height: 140%;
         color: #ACADB9;
-        margin-left: 42px;
+        margin-left: 27px;
         margin-top: auto;
+
+        @include tablet {
+            font-size: 10px;
+        }
     }
 
     &__right {
         grid-column: 8 / 10 span;
+
+        @include tablet {
+            grid-column: 8 / 12 span;
+        }
     }
 
     &__expenses {
-        min-width: 534px;
+        max-width: 534px;
         background: #FFFFFF;
         border: 1px solid #EDF2F7;
         border-radius: 25px;
@@ -91,6 +108,10 @@
 
         &__top {
             justify-content: space-between;
+        }
+
+        @include tablet {
+            padding: 15px;
         }
     }
 
@@ -147,13 +168,21 @@
         font-size: 19px;
         line-height: 140%;
         color: #323142;
+
+        @include tablet {
+            font-size: 16px;
+        }
     }
 
     &--action {
         font-weight: 500;
-        font-size: 12.0408px;
+        font-size: 12px;
         line-height: 140%;
         color: #323142;
+
+        @include tablet {
+            font-size: 11px;
+        }
     }
 }
 

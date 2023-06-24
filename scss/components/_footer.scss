@@ -8,6 +8,11 @@
         font-size: 14px;
     }
 
+    @include tablet {
+        padding: 50px 0 30px;
+        font-size: 12px;
+    }
+
     &__top {
         border-bottom: 1px solid #CBCBCB;
         padding-bottom: 29px;
@@ -19,6 +24,10 @@
         @include big-desktop {
             padding-bottom: 20px;
         }
+
+        @include tablet {
+            padding-bottom: 15px;
+        }
     }
 
     &__bottom {
@@ -28,6 +37,10 @@
 
         @include big-desktop {
             margin-top: 40px;
+        }
+
+        @include tablet {
+            margin-top: 35px;
         }
     }
 

@@ -1,6 +1,10 @@
 .subscribe {
     margin-top: 182px;
 
+    @include big-desktop {
+        margin: 150px;
+    }
+
     &__block {
         height: 280px;
         margin: 0 auto;
@@ -11,17 +15,26 @@
         background-size: cover;
         background-repeat: no-repeat;
         position: relative;
+        
+        @include big-desktop {
+            height: 240px;
+            padding: 26px 51px 0 46px;
+        }
     }
     
     &__sub {
 
         &--title {
-            grid-column: 1 / 5;
+            grid-column: 1 / 7;
             color: #FFF;
             text-align: center;
             font-size: 70px;
             font-weight: 800;
             text-align: start;
+
+            @include big-desktop {
+                font-size: 55px;
+            }
         }
     }
 
@@ -35,7 +48,7 @@
         grid-column: 1 / 6;
         input {
             padding: 21px 200px 22px 21px;
-            border-radius: 10.122px;
+            border-radius: 10px;
             background: #FFF;
             box-shadow: 0px 5px 32px 0px rgba(0, 0, 0, 0.10);
             border: none;
@@ -43,6 +56,11 @@
             color: #878787;
             font-size: 16px;
             text-transform: capitalize;
+
+            @include big-desktop {
+                padding: 18px 170px 18px 18px;
+                font-size: 15px;
+            }
         }
 
         &--btn {
@@ -56,6 +74,12 @@
             position: absolute;
             top: 7px;
             right: 84px;
+
+            @include big-desktop {
+                top: 4px;
+                right: 42px;
+                font-size: 13px;
+            }
         }
     }
 }

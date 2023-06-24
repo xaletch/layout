@@ -1,8 +1,17 @@
 .reviews {
     margin-top: 116px;
 
+    @include big-desktop {
+        margin-top: 82px;
+    }
+
     &__title {
         text-align: center;
+
+        @include big-desktop {
+            font-size: 32px;
+            line-height: 18px;
+        }
     }
 
     &__card {
@@ -26,6 +35,12 @@
             line-height: 26px;
             color: #636363;
             margin-bottom: 32px;
+
+            @include big-desktop {
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 28px;
+            }
         }
     }
 
@@ -44,6 +59,10 @@
         font-size: 20px;
         font-weight: 500;
         line-height: 31px;
+
+        @include big-desktop {
+            font-size: 18px;
+        }
     }
 
     &__with--us {
@@ -52,10 +71,18 @@
         font-family: Quicksand;
         font-weight: 500;
         line-height: 26px;
+
+        @include big-desktop {
+            font-size: 15px;
+        }
     }
 }
 
 .swiper {
     margin-top: 80px;
     height: 400px;
+
+    @include big-desktop {
+        margin-top: 56px;
+    }
 }

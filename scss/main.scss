@@ -1,0 +1,15 @@
+@import "mixins";
+@import "settings";
+@import "fonts";
+
+// подключение компонентов страницы
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/dishes';
+@import './components/footer';
+@import './components/purchases';
+@import './components/quality';
+@import './components/restaurant';
+@import './components/reviews';
+@import './components/subscribe';

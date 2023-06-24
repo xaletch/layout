@@ -1,7 +1,12 @@
 .footer {
-    margin-top: 156px;
+    margin-top: 154px;
     padding: 96px 0 81px;
     background: #EAEAEA;
+
+    @include big-desktop {
+        padding: 68px 0 57px;
+        font-size: 14px;
+    }
 
     &__top {
         border-bottom: 1px solid #CBCBCB;
@@ -10,12 +15,20 @@
         padding-right: 0;
         justify-content: space-between;
         align-items: center;
+
+        @include big-desktop {
+            padding-bottom: 20px;
+        }
     }
 
     &__bottom {
         margin-top: 57px;
         justify-content: space-between;
         align-items: center;
+
+        @include big-desktop {
+            margin-top: 40px;
+        }
     }
 
     &__social--media {

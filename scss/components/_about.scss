@@ -6,7 +6,7 @@
     svg {
         position: absolute;
         top: 0;
-        height: 205px;
+        height: 160px;
     }
 
     &__list {
@@ -14,6 +14,11 @@
         margin: 0 auto;
         padding: 49px 0 48px 0;
         min-width: 950px;
+
+        @include big-desktop {
+            min-width: 669px;
+            padding: 34px 0;
+        }
     }
 
     &__item {
@@ -38,11 +43,16 @@
 
     &__title {
         font-weight: 700;
-        font-size: 43.2px;
+        font-size: 43px;
         line-height: 54px;
         text-align: center;
         color: #fff;
         margin-bottom: 10px;
+
+        @include big-desktop {
+            font-size: 30px;
+            margin-bottom: 7px;
+        }
     }
 
     &__description {
@@ -52,5 +62,11 @@
         line-height: 22px;
         text-align: center;
         color: #C5BFED;
+
+        @include big-desktop {
+            font-size: 10px;
+            line-height: 15px;
+            max-width: 160px;
+        }
     }
 }

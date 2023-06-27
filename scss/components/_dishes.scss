@@ -35,6 +35,11 @@
 
     &__content {
         gap: 30px;
+
+        @include tablet {
+            justify-content: center;
+            flex-wrap: wrap;
+        }
     }
 
     &__card {
@@ -52,6 +57,17 @@
                 padding: 0 19px 0 16px;
             }
         }
+
+        &--extra {
+            @include tablet {
+                display: none;
+            }
+        }
+
+        @include tablet {
+            width: 160px;
+        }
+
     }
 
     &__add--favorites {

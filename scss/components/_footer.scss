@@ -8,7 +8,7 @@
         font-size: 14px;
     }
 
-    @include tablet {
+    @include for-desktop {
         padding: 50px 0 30px;
         font-size: 12px;
     }
@@ -25,7 +25,7 @@
             padding-bottom: 20px;
         }
 
-        @include tablet {
+        @include for-desktop {
             padding-bottom: 15px;
         }
     }
@@ -39,7 +39,7 @@
             margin-top: 40px;
         }
 
-        @include tablet {
+        @include for-desktop {
             margin-top: 35px;
         }
     }

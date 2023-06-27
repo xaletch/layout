@@ -43,7 +43,7 @@
             margin-bottom: 15px;
             align-items: center;
 
-            @include tablet {
+            @include for-desktop {
                 margin-bottom: 10px;
             }
         }
@@ -52,7 +52,7 @@
             margin-top: 34px;
         }
 
-        @include tablet {
+        @include for-desktop {
             width: 310px;
             margin-top: 20px;
         }
@@ -66,7 +66,7 @@
         margin-left: 27px;
         margin-top: auto;
 
-        @include tablet {
+        @include for-desktop {
             font-size: 10px;
         }
     }
@@ -74,7 +74,7 @@
     &__right {
         grid-column: 8 / 10 span;
 
-        @include tablet {
+        @include for-desktop {
             grid-column: 8 / 12 span;
         }
     }
@@ -110,7 +110,7 @@
             justify-content: space-between;
         }
 
-        @include tablet {
+        @include for-desktop {
             padding: 15px;
         }
     }
@@ -169,7 +169,7 @@
         line-height: 140%;
         color: #323142;
 
-        @include tablet {
+        @include for-desktop {
             font-size: 16px;
         }
     }
@@ -180,7 +180,7 @@
         line-height: 140%;
         color: #323142;
 
-        @include tablet {
+        @include for-desktop {
             font-size: 11px;
         }
     }

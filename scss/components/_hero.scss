@@ -2,8 +2,18 @@
     min-height: 600px;
     margin-top: 30px;
 
-    @include tablet {
+    @include for-desktop {
         margin-top: 10px;
+    }
+
+    &__img {
+        @include big-desktop {
+            width: 680px;
+        }
+
+        @include for-desktop {
+            width: 500px;
+        }
     }
 
     &__content {
@@ -50,6 +60,11 @@
             font-size: 53px;
             margin-bottom: 11px;
         }
+
+        @include tablet {
+            font-size: 50px;
+            margin-bottom: 8px;
+        }
     }
 
     &__description {
@@ -70,6 +85,11 @@
             font-size: 12px;
             line-height: 19px;
             margin-bottom: 37px;
+        }
+
+        @include tablet {
+            font-size: 11px;
+            line-height: 16px;
         }
     }
 

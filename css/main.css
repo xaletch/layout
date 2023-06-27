@@ -176,7 +176,7 @@ ul {
     border-radius: 12px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .nav__link--button {
     padding: 8px 15px;
     font-size: 11px;
@@ -198,9 +198,19 @@ ul {
   min-height: 600px;
   margin-top: 30px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .hero {
     margin-top: 10px;
+  }
+}
+@media (max-width: 1440px) {
+  .hero__img {
+    width: 680px;
+  }
+}
+@media (max-width: 1025px) {
+  .hero__img {
+    width: 500px;
   }
 }
 .hero__content {
@@ -247,6 +257,12 @@ ul {
     margin-bottom: 11px;
   }
 }
+@media (max-width: 965px) {
+  .hero__title {
+    font-size: 50px;
+    margin-bottom: 8px;
+  }
+}
 .hero__description {
   font-family: "Inter";
   font-style: normal;
@@ -265,6 +281,12 @@ ul {
     font-size: 12px;
     line-height: 19px;
     margin-bottom: 37px;
+  }
+}
+@media (max-width: 965px) {
+  .hero__description {
+    font-size: 11px;
+    line-height: 16px;
   }
 }
 .hero__btn {
@@ -422,6 +444,12 @@ ul {
 .dishes__content {
   gap: 30px;
 }
+@media (max-width: 965px) {
+  .dishes__content {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 .dishes__card {
   padding: 26px 17px 29px 5px;
   background: #FFFFFF;
@@ -436,6 +464,16 @@ ul {
 @media (max-width: 1440px) {
   .dishes__card--bottom {
     padding: 0 19px 0 16px;
+  }
+}
+@media (max-width: 965px) {
+  .dishes__card--extra {
+    display: none;
+  }
+}
+@media (max-width: 965px) {
+  .dishes__card {
+    width: 160px;
   }
 }
 .dishes__add--favorites {
@@ -525,7 +563,7 @@ ul {
     font-size: 14px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .footer {
     padding: 50px 0 30px;
     font-size: 12px;
@@ -544,7 +582,7 @@ ul {
     padding-bottom: 20px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .footer__top {
     padding-bottom: 15px;
   }
@@ -559,7 +597,7 @@ ul {
     margin-top: 40px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .footer__bottom {
     margin-top: 35px;
   }
@@ -615,7 +653,7 @@ ul {
   margin-bottom: 15px;
   align-items: center;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .purchases__card--look {
     margin-bottom: 10px;
   }
@@ -625,7 +663,7 @@ ul {
     margin-top: 34px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .purchases__card {
     width: 310px;
     margin-top: 20px;
@@ -639,7 +677,7 @@ ul {
   margin-left: 27px;
   margin-top: auto;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .purchases__card--time {
     font-size: 10px;
   }
@@ -647,7 +685,7 @@ ul {
 .purchases__right {
   grid-column: 8/10 span;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .purchases__right {
     grid-column: 8/12 span;
   }
@@ -680,7 +718,7 @@ ul {
 .purchases__expenses--card__top {
   justify-content: space-between;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .purchases__expenses--card {
     padding: 15px;
   }
@@ -732,7 +770,7 @@ ul {
   line-height: 140%;
   color: #323142;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .card__description--title {
     font-size: 16px;
   }
@@ -743,7 +781,7 @@ ul {
   line-height: 140%;
   color: #323142;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .card__description--action {
     font-size: 11px;
   }
@@ -891,6 +929,13 @@ ul {
     line-height: 41px;
   }
 }
+@media (max-width: 965px) {
+  .quality__title {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+}
 .quality__list {
   font-weight: 400;
   font-size: 20px;
@@ -906,6 +951,13 @@ ul {
     margin-bottom: 19px;
   }
 }
+@media (max-width: 965px) {
+  .quality__list {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 16px;
+  }
+}
 .quality__download--block {
   max-width: 330px;
   margin-top: 34px;
@@ -919,6 +971,12 @@ ul {
   .quality__download--block .svg {
     top: 40px;
     right: 45px;
+  }
+}
+@media (max-width: 965px) {
+  .quality__download--block .svg {
+    top: 50px;
+    right: 0px;
   }
 }
 .quality__btn {
@@ -944,6 +1002,11 @@ ul {
     padding: 14px 18px 13px;
     font-size: 12px;
     line-height: 16px;
+  }
+}
+@media (max-width: 965px) {
+  .quality__btn {
+    padding: 12px 16px 11px;
   }
 }
 
@@ -981,6 +1044,11 @@ ul {
 }
 .restaurant__content {
   gap: 30px;
+}
+@media (max-width: 965px) {
+  .restaurant__content {
+    flex-wrap: wrap;
+  }
 }
 .restaurant__skill {
   margin-left: 32px;
@@ -1055,6 +1123,16 @@ ul {
 .card__time {
   margin-right: 6px;
 }
+@media (max-width: 1025px) {
+  .card__time {
+    font-size: 12px;
+  }
+}
+@media (max-width: 965px) {
+  .card__time {
+    font-size: 10px;
+  }
+}
 .card__rating {
   align-items: center;
 }
@@ -1122,7 +1200,7 @@ ul {
 .reviews__card--inner {
   padding: 38px 43px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .reviews__card--inner {
     padding: 30px 33px;
   }
@@ -1132,7 +1210,7 @@ ul {
   align-items: center;
   margin-bottom: 30px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .reviews__card--header {
     margin-bottom: 20px;
   }
@@ -1151,7 +1229,7 @@ ul {
     margin-bottom: 28px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .reviews__card--text {
     font-size: 12px;
     margin-bottom: 22px;
@@ -1175,7 +1253,7 @@ ul {
     font-size: 18px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .user__name {
     font-size: 14px;
     line-height: 20px;
@@ -1193,7 +1271,7 @@ ul {
     font-size: 15px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .user__with--us {
     font-size: 12px;
     line-height: 16px;
@@ -1236,7 +1314,7 @@ ul {
     padding: 26px 51px 0 46px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .subscribe__block {
     height: 200px;
     padding: 24px 40px 0 40px;
@@ -1255,7 +1333,7 @@ ul {
     font-size: 55px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .subscribe__sub--title {
     font-size: 50px;
   }
@@ -1265,7 +1343,7 @@ ul {
   height: 196px;
   margin-top: 110px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .subscribe__img {
     margin-top: 70px;
   }
@@ -1290,7 +1368,7 @@ ul {
     font-size: 15px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .subscribe__input input {
     padding: 16px 165px 16px 16px;
     font-size: 12px;
@@ -1315,7 +1393,7 @@ ul {
     font-size: 14px;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
   .subscribe__input--btn {
     top: 4px;
     right: 5px;

@@ -34,6 +34,12 @@
             margin-bottom: 45px;
             line-height: 41px;
         }
+
+        @include tablet {
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 25px;
+        }
     }
 
     &__list {
@@ -49,6 +55,12 @@
             line-height: 21px;
             margin-bottom: 19px;
         }
+        
+        @include tablet {
+            font-size: 13px;
+            line-height: 18px;
+            margin-bottom: 16px;
+        }
     }
 
     &__download--block {
@@ -63,6 +75,11 @@
             @include big-desktop {
                 top: 40px;
                 right: 45px;
+            }
+
+            @include tablet {
+                top: 50px;
+                right: 0px;
             }
         }
     }
@@ -88,6 +105,10 @@
             padding: 14px 18px 13px;
             font-size: 12px;
             line-height: 16px;
+        }
+
+        @include tablet {
+            padding: 12px 16px 11px;
         }
     }
 }

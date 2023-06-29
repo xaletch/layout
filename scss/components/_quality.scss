@@ -8,6 +8,12 @@
 
     &__left {
         grid-column: 2 / 4 span;
+
+        @include mobile {
+            grid-column: 4 / 7 span;
+            grid-row: 2;
+            margin-top: 102px;
+        }
     }
     
     &__right {
@@ -16,6 +22,20 @@
 
         @include big-desktop {
             grid-column: 9 / 4 span;
+        }
+
+        @include tablet {
+            margin-top: 60px;
+            grid-column: 8 / 8 span;
+        }
+
+        @include small-tablet {
+            grid-column: 8 / 8 span;
+        }
+
+        @include mobile {
+            margin-top: 0;
+            grid-column: 2 / 12 span;
         }
     }
 
@@ -40,6 +60,18 @@
             line-height: 36px;
             margin-bottom: 25px;
         }
+
+        @include small-tablet {
+            font-size: 28px;
+            list-style: 28px;
+        }
+
+        @include mobile {
+            font-size: 30px;
+            text-align: center;
+            line-height: 34px;
+            margin-bottom: 37px;
+        }
     }
 
     &__list {
@@ -61,6 +93,11 @@
             line-height: 18px;
             margin-bottom: 16px;
         }
+
+        @include mobile {
+            font-size: 11px;
+            line-height: 17px;
+        }
     }
 
     &__download--block {
@@ -81,6 +118,20 @@
                 top: 50px;
                 right: 0px;
             }
+
+            @include mobile {
+                width: 150px;
+                height: 56px;
+                top: 85px;
+                left: 0;
+                transform: rotate(100deg);
+                z-index: -1;
+            }
+        }
+
+        @include mobile {
+            display: flex;
+            justify-content: center;
         }
     }
     &__btn {

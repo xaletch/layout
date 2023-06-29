@@ -13,13 +13,21 @@
         font-size: 12px;
     }
 
+    @include mobile {
+        margin-top: 200px;
+    }
+
+    &__container {
+        @include mobile {
+            padding: 0px 30px;
+        }
+    }
+
     &__top {
         border-bottom: 1px solid #CBCBCB;
         padding-bottom: 29px;
         padding-left: 0;
         padding-right: 0;
-        justify-content: space-between;
-        align-items: center;
 
         @include big-desktop {
             padding-bottom: 20px;
@@ -27,6 +35,39 @@
 
         @include for-desktop {
             padding-bottom: 15px;
+        }
+
+        @include small-tablet {
+            align-items: start;
+        }
+    }
+
+    &__social--media--top {
+        display: none;
+
+        @include small-tablet {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            grid-column: 12;
+        }
+    }
+
+    &__nav {
+        grid-column: 12;
+
+        @include small-tablet {
+            margin-top: 50px;
+            grid-column: 1 / 12 span;
+            margin-bottom: 15px;
+        }
+    }
+
+    &__nav--list {
+        @include small-tablet {
+            flex-direction: column;
+            margin: 0;
+            gap: 20px;
         }
     }
 
@@ -42,10 +83,19 @@
         @include for-desktop {
             margin-top: 35px;
         }
+
+        @include mobile {
+            margin-top: 26px;
+            justify-content: center;
+        }
     }
 
-    &__social--media {
+    &__social--media--bottom {
         align-items: center;
         gap: 53px;
+
+        @include mobile {
+            display: none;
+        }
     }
 }

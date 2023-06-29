@@ -28,7 +28,7 @@ hr {
 
 body {
     margin: 0;
-    min-width: 375px;
+    min-width: 350px;
     min-height: 100%;
     font-family: Poppins, sans-serif;
     background: #F9F9F9;
@@ -105,4 +105,16 @@ ul {
     font-size: 45px;
     line-height: 26px;
     color: #323142;
+}
+
+.burger {
+    @include burger;
+    
+    display: none;
+    height: 22px;
+    color: #282828;
+
+    @include  small-tablet {
+        display: block;
+    }
 }

@@ -5,7 +5,12 @@
         margin: 150px;
     }
 
+    @include mobile {
+        margin: 0;
+    }
+
     &__block {
+        min-width: 315px;
         height: 280px;
         margin: 0 auto;
         padding: 46px 51px 0px 46px;
@@ -26,6 +31,11 @@
             height: 200px;
             padding: 24px 40px 0 40px;
         }
+
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     
     &__sub {
@@ -44,21 +54,17 @@
             @include for-desktop {
                 font-size: 50px;
             }
-        }
-    }
 
-    &__img {
-        width: 194px;
-        height: 196px;
-        margin-top: 110px;
-
-        @include for-desktop {
-            margin-top: 70px;
+            @include mobile {
+                font-size: 41px;text-align: center;
+                margin-bottom: 15px;
+            }
         }
     }
 
     &__input {
         position: relative;
+
         input {
             padding: 21px 200px 22px 21px;
             border-radius: 10px;
@@ -79,6 +85,10 @@
                 padding: 16px 165px 16px 16px;
                 font-size: 12px;
             }
+
+            @include tablet {
+                padding: 16px 150px 15px 14px;
+            }
         }
 
         &--btn {
@@ -92,7 +102,6 @@
             position: absolute;
             top: 7px;
             right: 6px;
-            // right: 84px;
 
             @include big-desktop {
                 top: 3px;
@@ -107,6 +116,26 @@
                 border-radius: 7px;
                 padding: 12px 15px;
             }
+
+            @include tablet {
+                padding: 12px 15px 12px 16px;
+                font-size: 10px;
+                top: 5px;
+            }
+        }
+    }
+
+    &__img {
+        width: 194px;
+        height: 196px;
+        margin-top: 110px;
+
+        @include for-desktop {
+            margin-top: 70px;
+        }
+
+        @include mobile {
+            margin: 15px;
         }
     }
 }

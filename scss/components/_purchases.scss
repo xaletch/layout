@@ -12,9 +12,17 @@
         @include big-desktop {
             padding-bottom: 95px;
         }
+
+        @include mobile {
+            justify-content: center;
+        }
     }
     &__left {
         grid-column: 5 span;
+
+        @include mobile {
+            grid-column: 1 / 12  span;
+        }
     }
 
     &__title {
@@ -25,9 +33,18 @@
         text-transform: capitalize;
 
         @include big-desktop {
-            width: 390px;
             font-size: 36px;
             line-height: 41px;
+        }
+
+        @include small-tablet {
+            font-size: 26px;
+        }
+
+        @include mobile {
+            font-size: 30px;
+            line-height: 32px;
+            text-align: center;
         }
     }
 
@@ -77,10 +94,24 @@
         @include for-desktop {
             grid-column: 8 / 12 span;
         }
+
+        @include tablet {
+            grid-column: 7 / 10 span;
+        }
+
+        @include small-tablet {
+            grid-column: 3 / 8 span;
+        }
+
+        @include mobile {
+            margin-top: 50px;
+            grid-column: 1 / 12 span;
+        }
     }
 
     &__expenses {
         max-width: 534px;
+        min-width: 316px;
         background: #FFFFFF;
         border: 1px solid #EDF2F7;
         border-radius: 25px;
@@ -90,6 +121,11 @@
 
             @include big-desktop {
                 padding: 32px 26px;
+            }
+
+            @include mobile {
+                padding: 26px 22px;
+
             }
         }
 
@@ -113,16 +149,28 @@
         @include for-desktop {
             padding: 15px;
         }
+
+        @include mobile {
+            padding: 14px;
+        }
     }
 
     &__expenses--description {
         margin-left: 18px;
         grid-column: 2 / 12;
         font-family: 'Manrope';
+
+        @include mobile {
+            margin-left: 11px;
+        }
     }
 
     &__expenses--card__bottom {
         margin-top: 20px;
+        
+        @include mobile {
+            margin-top: 12px;
+        }
     }
 
     &__expenses--consumption {
@@ -138,10 +186,14 @@
         &::before {
             content: "";
             width: 95%;
-            height: 10px;
+            height: 100%;
             background: #6C5FBC;
             border-radius: 78px;
             position: absolute;
+        }
+
+        @include mobile {
+            height: 5px;
         }
     }
     
@@ -152,10 +204,14 @@
         &::before {
             content: "";
             width: 55%;
-            height: 10px;
+            height: 100%;
             background: #fbac18;
             border-radius: 78px;
             position: absolute;
+        }
+
+        @include mobile {
+            height: 5px;
         }
     }
 
@@ -200,6 +256,10 @@
             @include big-desktop {
                 font-size: 20px;
             }
+
+            @include mobile {
+                font-size: 16px;
+            }
         }
         &--month__selection {
             padding: 12px 18px;
@@ -220,6 +280,11 @@
                 padding: 8px 13px;
                 font-size: 16px;
             }
+
+            @include mobile {
+                padding: 7px 10px;
+                font-size: 12px;
+            }
         }
         &--month__list {
             font-family: 'Manrope';
@@ -238,11 +303,20 @@
                 background: var(--popup-list);
                 color: #fff;
             }
+
+            @include mobile {
+                margin-top: 170px;
+                font-size: 12px;
+            }
         }
 
         &--month__title {
             padding: 5px 40px;
             cursor: pointer;
+
+            @include mobile {
+                padding: 3px 25px;
+            }
         }
     }
 
@@ -255,6 +329,10 @@
         @include big-desktop {
             font-size: 16px;
         }
+
+        @include mobile {
+            font-size: 12px;
+        }
     }
 
     &__top--increased {
@@ -265,6 +343,10 @@
 
         @include big-desktop {
             font-size: 13px;
+        }
+
+        @include mobile {
+            font-size: 9px;
         }
     }
 
@@ -277,6 +359,10 @@
 
         @include big-desktop {
             font-size: 18px;
+        }
+
+        @include mobile {
+            font-size: 14px;
         }
     }
 }

@@ -15,7 +15,8 @@
     }
 
     &__card {
-        max-width: 528px;
+        max-width: 500px;
+        min-width: 330px;
         background: #fff;
         border-radius: 20px;
 
@@ -53,6 +54,12 @@
             @include for-desktop {
                 font-size: 12px;
                 margin-bottom: 22px;
+            }
+
+            @include tablet {
+                font-size: 10px;
+                line-height: 16px;
+                margin-bottom: 18px;
             }
         }
     }

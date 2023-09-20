@@ -75,6 +75,10 @@
             @include big-desktop {
                 padding: 0 19px 0 16px;
             }
+
+            @include small-mobile {
+                padding: 0 15px;
+            }
         }
 
         &--extra {
@@ -92,6 +96,10 @@
             padding: 27px 11px 19px 3px;
         }
 
+        @include small-mobile {
+            width: 135px;
+            padding: 23px 6px 19px 3px;
+        }
     }
 
     &__add--favorites {

@@ -65,6 +65,7 @@ ul {
 
 .container {
     max-width: calc(var(--container) + (var(--padding-container) * 2));
+    min-width: 310px;
     padding: 0 var(--padding-container);
     margin: 0 auto;
 }

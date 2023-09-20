@@ -1,9 +1,16 @@
 .quality {
     .container {
         max-width: 1260px;
+        min-width: 310px;
         padding-top: 100px;
         padding-bottom: 100px;
         border-bottom: 1px solid #CBCBCB;
+    }
+
+    &_inner {
+        @include small-mobile {
+            width: 310px;
+        }
     }
 
     &__left {
@@ -126,6 +133,11 @@
                 left: 0;
                 transform: rotate(100deg);
                 z-index: -1;
+            }
+
+            @include small-mobile {
+                // top: 95px;
+                left: -10px;
             }
         }
 

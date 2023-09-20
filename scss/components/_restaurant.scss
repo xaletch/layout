@@ -28,6 +28,11 @@
             line-height: 18px;
             margin-bottom: 60px;
         }
+
+        @include small-mobile {
+            line-height: 36px;
+        }
+        
     }
 
     &__content {
